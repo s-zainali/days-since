@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Days Since</title>
+    <link rel="stylesheet" href="./style/homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
+
+    
+    <h1 id="main-heading">Days Since</h1>
+    <!-- <img src="./images/broken_heart.png" alt="broken heart image"> -->
+    <div class="container">
+      <div class="fields-container">
+        <label for="start">Start Date</label>
+        <input type="date" name="start" class="date-field" id="start" placeholder="Start date">
+        <label for="to">To Date</label>
+        <input type="date" name="to" class="date-field" id="to" placeholder="To date">
+        
+        <!-- <label class="checkbox-container">Use To date as today
+          <input type="checkbox" id="checkbox">
+          <span class="checkmark"></span>
+        </label>
+         -->
+        <div id="submit-button" onclick="calculate()">Calculate</div>
+      </div>
+      <div class="answer-container">
+        <p id="answer"></p>
+      </div>
+    </div>
+    <script src="./scripts/calculate.js"></script>
+  </body>
+</html>
