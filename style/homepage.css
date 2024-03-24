@@ -30,6 +30,7 @@ body {
   opacity: 0.95;
   box-shadow: 0rem 0rem 1rem black;
   border-radius: 2rem;
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -167,10 +168,11 @@ label {
 #submit-button {
   width: 40vh;
   border: none;
-  border-radius: 0.2rem;
+  border-radius: 0.5rem;
   padding: 1rem;
   margin: 1rem 0rem;
-  background-color: var(--dark);
+  color: var(--main-bg-color);
+  background-color: var(--text-color);
   transform: none;
   display: flex;
   align-items: center;
@@ -181,10 +183,8 @@ label {
 #submit-button:hover {
   border: none;
   cursor: pointer;
-  background-color: var(--text-color);
   box-shadow: 0pt 0pt 1rem var(--text-color);
   transform: none;
-  color: var(--main-bg-color);
 }
 
 
@@ -197,3 +197,59 @@ label {
 #answer {
   font-size: 36pt;
 }
+
+
+
+/* RESPONSIVE STYLING */
+
+@media only screen and (max-width: 500px) {
+  html {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    height: 95vh;
+  }
+  body {
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  h1 {
+    font-size: 36pt;
+  }
+
+  .container {
+    flex-direction: column-reverse;
+    width: 90vw;
+  }
+
+  .fields-container {
+    width: inherit;
+    align-items: center;
+  }
+
+  .date-field {
+    width: 80%;
+    font-size: 14pt;
+  }
+
+  #submit-button {
+    width: 80%;
+  }
+
+  .answer-container {
+    width: auto;
+    height: 20pt;
+  }
+
+  #answer {
+    font-size: 18pt;
+  }
+
+}
+
